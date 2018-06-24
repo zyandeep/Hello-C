@@ -1,0 +1,11 @@
+encrypt.o: func_def.c
+	gcc -c func_def.c -I./my_headers/ -o encrypt.o
+
+checksum.o: func_def1.c
+	gcc -c func_def1.c -I./my_headers/ -o checksum.o
+
+test_code.o: test_code.c 
+	gcc -c test_code.c -I./my_headers/ -o test_code.o
+
+launch: encrypt.o checksum.o test_code.o
+	gcc encrypt.o checksum.o test_code.o -o launch

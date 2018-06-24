@@ -1,0 +1,4 @@
+Name : Mark
+Age : 25
+Home town : NY
+Salary: 1500.50
